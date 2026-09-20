@@ -1,5 +1,7 @@
 # FinZoom — Financial Analysis & Valuation Dashboard
+https://finzoom-bprpyq56errohlwuoq4stb.streamlit.app/
 
+open the URL and navigate through the pages using the sidebar.
 ## Disclaimer
 
 This is a **fictional personal portfolio project** using **synthetic financial
@@ -198,13 +200,6 @@ git clone <repository-url>
 cd finzoom
 pip install -r requirements.txt
 ```
-
-## Usage
-
-(https://finzoom-bprpyq56errohlwuoq4stb.streamlit.app/)
-
- open the URL and navigate through the pages using the sidebar.
-
 
 ## Limitations
 
