@@ -6,12 +6,12 @@ from src.data_loader import load_financials
 from src.scenarios import SCENARIOS, run_scenarios
 from src.ui import apply_theme, page_header
 
-st.set_page_config(page_title="FinZoom - Scenarios", page_icon="🎭", layout="wide")
+st.set_page_config(page_title="Scenarios", layout="wide")
 apply_theme()
 page_header(
     "Scenarios",
-    "Three assumption sets run through the same forecast + DCF engine. Results are shown "
-    "as-is, without labelling any scenario as better.",
+    "Three assumption sets run through the same forecast and DCF engine. Results are shown "
+    "exactly as calculated, without labelling any scenario as better.",
 )
 
 historical = load_financials("data/financials.csv")

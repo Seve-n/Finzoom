@@ -10,7 +10,7 @@ from src.forecast import build_forecast
 from src.ui import apply_theme, page_header
 from src.valuation import sensitivity_growth_margin, sensitivity_wacc_growth
 
-st.set_page_config(page_title="FinZoom - Sensitivity", page_icon="🌡️", layout="wide")
+st.set_page_config(page_title="Sensitivity", layout="wide")
 apply_theme()
 page_header("Sensitivity Analysis", "Two heatmaps: how much Enterprise Value moves as the mechanical inputs (WACC, growth) and the operational inputs (Revenue Growth, EBITDA Margin) change.")
 
@@ -50,7 +50,7 @@ with st.container(border=True):
         )
     )
     fig1.update_layout(
-        title="Enterprise Value (€M) — rows: WACC, columns: Terminal Growth",
+        title="Enterprise Value (€M) by WACC and Terminal Growth",
         xaxis_title="Terminal Growth",
         yaxis_title="WACC",
         margin=dict(t=40),
@@ -92,7 +92,7 @@ with st.container(border=True):
         )
     )
     fig2.update_layout(
-        title="Enterprise Value (€M) — rows: Revenue Growth, columns: EBITDA Margin",
+        title="Enterprise Value (€M) by Revenue Growth and EBITDA Margin",
         xaxis_title="EBITDA Margin",
         yaxis_title="Revenue Growth",
         margin=dict(t=40),

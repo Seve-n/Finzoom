@@ -11,11 +11,11 @@ from src.data_loader import load_financials
 from src.forecast import build_forecast
 from src.ui import CHART_PALETTE, apply_theme, page_header
 
-st.set_page_config(page_title="FinZoom - Forecast", page_icon="🔮", layout="wide")
+st.set_page_config(page_title="Forecast", layout="wide")
 apply_theme()
 page_header(
     "Forecast (2026-2028)",
-    "Move the sliders below — Revenue and EBITDA update live, and everything else "
+    "Move the sliders below. Revenue and EBITDA update live, and everything else "
     "(D&A, Capex, Working Capital, tax rate) stays at its 2021-2025 historical average.",
 )
 
@@ -94,7 +94,7 @@ with chart_col2:
         st.plotly_chart(fig2, use_container_width=True)
 
 st.subheader("Assumption Gap vs Historical Average")
-st.caption("Descriptive comparison only — this does not judge whether the assumption is realistic.")
+st.caption("This is a descriptive comparison only. It does not judge whether the assumption is realistic.")
 
 historical_avg_growth = enriched["Revenue_Growth"].mean()
 forecast_avg_growth = pd.Series(growth_assumptions).mean()

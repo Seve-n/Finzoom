@@ -15,17 +15,13 @@ from src.data_loader import load_financials
 from src.data_quality import run_all_checks
 from src.ui import CHART_PALETTE, apply_theme, how_it_works, page_header
 
-st.set_page_config(page_title="FinZoom", page_icon="📈", layout="wide")
+st.set_page_config(page_title="FinZoom", layout="wide")
 apply_theme()
 
 with st.container(key="hero_badge"):
-    st.markdown("Fictional portfolio project — synthetic data only")
+    st.markdown("Fictional portfolio project, not affiliated with KPMG or any real company.")
 
-page_header(
-    "FinZoom — Financial Analysis & Valuation Dashboard",
-    'Historical performance, forecast, and DCF valuation for a fictional B2B SaaS '
-    'company, "NovaTech Solutions". Not affiliated with KPMG or any real company.',
-)
+page_header("FinZoom")
 
 st.divider()
 st.subheader("How this dashboard works")
@@ -37,7 +33,7 @@ enriched = compute_all_kpis(historical)
 latest = enriched.iloc[-1]
 previous = enriched.iloc[-2]
 
-st.subheader(f"Financial Snapshot — FY{int(latest['Year'])}")
+st.subheader(f"Financial Snapshot for FY{int(latest['Year'])}")
 
 with st.container(border=True):
     col1, col2, col3, col4, col5, col6 = st.columns(6)
@@ -100,7 +96,7 @@ with chart_col2:
 st.divider()
 
 st.subheader("Financial Insights")
-st.caption("Descriptive observations only — no investment recommendations.")
+st.caption("These are descriptive observations only, not investment recommendations.")
 
 start_revenue = enriched["Revenue"].iloc[0]
 end_revenue = enriched["Revenue"].iloc[-1]

@@ -10,7 +10,7 @@ from src.forecast import build_forecast
 from src.ui import apply_theme, page_header
 from src.valuation import equity_value, run_dcf
 
-st.set_page_config(page_title="FinZoom - Valuation", page_icon="💰", layout="wide")
+st.set_page_config(page_title="Valuation", layout="wide")
 apply_theme()
 page_header("DCF Valuation", "Turn a forecast into a value: set your assumptions below and every step is shown, from Free Cash Flow to Equity Value.")
 

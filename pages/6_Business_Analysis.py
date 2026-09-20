@@ -6,7 +6,7 @@ import streamlit as st
 
 from src.ui import apply_theme, page_header
 
-st.set_page_config(page_title="FinZoom - Business Analysis", page_icon="🧭", layout="wide")
+st.set_page_config(page_title="Business Analysis", layout="wide")
 apply_theme()
 page_header("Business Analysis", "The reasoning behind this app: the problem, the people it serves, and the questions it answers.")
 
