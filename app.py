@@ -18,9 +18,6 @@ from src.ui import CHART_PALETTE, apply_theme, how_it_works, page_header
 st.set_page_config(page_title="FinZoom", layout="wide")
 apply_theme()
 
-with st.container(key="hero_badge"):
-    st.markdown("Fictional portfolio project, not affiliated with KPMG or any real company.")
-
 page_header("FinZoom")
 
 st.divider()

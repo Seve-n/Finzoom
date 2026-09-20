@@ -11,7 +11,6 @@ import streamlit as st
 ACCENT = "#6366F1"
 FOREGROUND = "#252B31"
 MUTED = "#8A9496"
-BORDER = "#E5E5E5"
 
 CHART_PALETTE = {
     "primary": FOREGROUND,
@@ -49,15 +48,6 @@ def apply_theme() -> None:
         }}
         [data-testid="stSidebarNav"] li div a {{
             font-size: 0.9rem;
-        }}
-        .st-key-hero_badge {{
-            display: inline-block;
-            border: 1px solid {BORDER};
-            border-radius: 999px;
-            padding: 0.3rem 1rem;
-            font-size: 0.8rem;
-            color: {MUTED};
-            margin-bottom: 0.5rem;
         }}
         div[data-testid="stVerticalBlockBorderWrapper"] {{
             border-radius: 1rem !important;
