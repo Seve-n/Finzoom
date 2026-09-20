@@ -136,5 +136,5 @@ st.divider()
 st.caption(
     "Use the sidebar to go deeper: Financials for the full statements, Forecast to "
     "set your own assumptions, Valuation for the DCF, Sensitivity and Scenarios to "
-    "stress-test it, and Business Analysis / Requirements for the BA deliverables."
+    "stress-test it, and Business Analysis for the BA framing."
 )

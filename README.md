@@ -71,9 +71,6 @@ valuation.
 
 ## Functional Requirements
 
-See the **Requirements** page in the app for the full table with
-Acceptance Criteria and Status. Summary:
-
 | ID | Requirement | Priority |
 |---|---|---|
 | REQ-001 | Display historical revenue | High |
@@ -167,18 +164,18 @@ Value side by side, without labelling any scenario as "better".
 finzoom/
 ├── app.py                     # Home / Executive Dashboard
 ├── pages/
-│   ├── 1_Financials.py        # Detailed historical statements + KPIs
-│   ├── 2_Forecast.py          # 3-year forecast, historical vs forecast
-│   ├── 3_Valuation.py         # Step-by-step DCF, Enterprise & Equity Value
-│   ├── 4_Sensitivity.py       # WACC x g and Growth x Margin heatmaps
-│   ├── 5_Scenarios.py         # Downside / Base / Upside
-│   ├── 6_Business_Analysis.py # Problem, stakeholders, business questions
-│   └── 7_Requirements.py      # Requirements table
+│   ├── 1_📊_Financials.py       # Detailed historical statements + KPIs
+│   ├── 2_🔮_Forecast.py         # 3-year forecast, historical vs forecast
+│   ├── 3_💰_Valuation.py        # Step-by-step DCF, Enterprise & Equity Value
+│   ├── 4_🌡️_Sensitivity.py      # WACC x g and Growth x Margin heatmaps
+│   ├── 5_🎭_Scenarios.py        # Downside / Base / Upside
+│   └── 6_🧭_Business_Analysis.py # Problem, stakeholders, business questions
 ├── data/
 │   └── financials.csv
 ├── src/
 │   ├── data_loader.py         # CSV loading + column validation
 │   ├── calculations.py        # KPI calculations (pure functions)
+│   ├── ui.py                  # Shared theme + layout helpers
 │   ├── forecast.py            # 3-year forecast engine
 │   ├── valuation.py           # DCF + sensitivity helpers
 │   ├── scenarios.py           # Downside / Base / Upside engine
