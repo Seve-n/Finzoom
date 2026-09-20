@@ -3,8 +3,11 @@
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(page_title="FinZoom - Requirements", layout="wide")
-st.title("Requirements")
+from src.ui import apply_theme, page_header
+
+st.set_page_config(page_title="FinZoom - Requirements", page_icon="📋", layout="wide")
+apply_theme()
+page_header("Requirements", "The functional requirements this app was built against, with acceptance criteria and status.")
 
 requirements = pd.DataFrame(
     [
@@ -67,4 +70,5 @@ requirements = pd.DataFrame(
     ]
 )
 
-st.dataframe(requirements.set_index("Requirement ID"), use_container_width=True)
+with st.container(border=True):
+    st.dataframe(requirements.set_index("Requirement ID"), use_container_width=True)
