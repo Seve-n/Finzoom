@@ -1,4 +1,4 @@
-"""FinScope - Home / Executive Financial Dashboard.
+"""FinZoom - Home / Executive Financial Dashboard.
 
 Entry point of the Streamlit app. Shows the latest-year KPIs, four
 historical evolution charts, auto-generated descriptive insights, and a
@@ -12,9 +12,9 @@ from src.calculations import compute_all_kpis, revenue_cagr
 from src.data_loader import load_financials
 from src.data_quality import run_all_checks
 
-st.set_page_config(page_title="FinScope", layout="wide")
+st.set_page_config(page_title="FinZoom", layout="wide")
 
-st.title("FinScope — Financial Analysis & Valuation Dashboard")
+st.title("FinZoom — Financial Analysis & Valuation Dashboard")
 st.caption(
     "Fictional portfolio project analyzing a synthetic B2B SaaS company, "
     "\"NovaTech Solutions\". Not affiliated with KPMG or any real company."

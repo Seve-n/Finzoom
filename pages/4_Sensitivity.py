@@ -9,7 +9,7 @@ from src.data_loader import load_financials
 from src.forecast import build_forecast
 from src.valuation import sensitivity_growth_margin, sensitivity_wacc_growth
 
-st.set_page_config(page_title="FinScope - Sensitivity", layout="wide")
+st.set_page_config(page_title="FinZoom - Sensitivity", layout="wide")
 st.title("Sensitivity Analysis")
 
 historical = load_financials("data/financials.csv")

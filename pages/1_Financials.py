@@ -5,7 +5,7 @@ import streamlit as st
 from src.calculations import compute_all_kpis
 from src.data_loader import load_financials
 
-st.set_page_config(page_title="FinScope - Financials", layout="wide")
+st.set_page_config(page_title="FinZoom - Financials", layout="wide")
 st.title("Historical Financials")
 
 historical = load_financials("data/financials.csv")
@@ -36,6 +36,6 @@ st.dataframe(
 st.download_button(
     "Export Financial Summary (CSV)",
     data=enriched.to_csv(index=False).encode("utf-8"),
-    file_name="finscope_financial_summary.csv",
+    file_name="finzoom_financial_summary.csv",
     mime="text/csv",
 )

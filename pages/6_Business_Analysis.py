@@ -4,7 +4,7 @@ and the user stories that shaped this project's requirements.
 
 import streamlit as st
 
-st.set_page_config(page_title="FinScope - Business Analysis", layout="wide")
+st.set_page_config(page_title="FinZoom - Business Analysis", layout="wide")
 st.title("Business Analysis")
 
 st.subheader("Business Problem")

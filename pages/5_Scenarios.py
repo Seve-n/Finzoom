@@ -5,7 +5,7 @@ import streamlit as st
 from src.data_loader import load_financials
 from src.scenarios import SCENARIOS, run_scenarios
 
-st.set_page_config(page_title="FinScope - Scenarios", layout="wide")
+st.set_page_config(page_title="FinZoom - Scenarios", layout="wide")
 st.title("Scenarios")
 st.caption(
     "Three assumption sets applied to the same forecast + DCF engine. "

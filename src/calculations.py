@@ -1,4 +1,4 @@
-"""KPI calculations for FinScope.
+"""KPI calculations for FinZoom.
 
 Every function takes a DataFrame and returns a NEW DataFrame (no mutation of
 the input), following the immutability principle: original data stays

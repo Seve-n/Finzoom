@@ -10,7 +10,7 @@ from src.calculations import compute_all_kpis
 from src.data_loader import load_financials
 from src.forecast import build_forecast
 
-st.set_page_config(page_title="FinScope - Forecast", layout="wide")
+st.set_page_config(page_title="FinZoom - Forecast", layout="wide")
 st.title("Forecast (2026-2028)")
 st.caption(
     "Revenue Growth and EBITDA Margin are the only assumptions you control. "
@@ -113,6 +113,6 @@ gap_col2.metric(
 st.download_button(
     "Export Forecast (CSV)",
     data=forecast.to_csv(index=False).encode("utf-8"),
-    file_name="finscope_forecast.csv",
+    file_name="finzoom_forecast.csv",
     mime="text/csv",
 )

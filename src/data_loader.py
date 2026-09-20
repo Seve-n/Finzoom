@@ -1,4 +1,4 @@
-"""Load and validate FinScope historical financial data."""
+"""Load and validate FinZoom historical financial data."""
 
 from pathlib import Path
 

@@ -1,4 +1,4 @@
-# FinScope — Financial Analysis & Valuation Dashboard
+# FinZoom — Financial Analysis & Valuation Dashboard
 
 ## Disclaimer
 
@@ -10,7 +10,7 @@ educational purposes.
 
 ## Project Overview
 
-FinScope is a Streamlit application that analyzes five years of historical
+FinZoom is a Streamlit application that analyzes five years of historical
 financials for a fictional B2B SaaS company, forecasts three additional
 years under user-defined assumptions, and values the company with a simple
 Discounted Cash Flow (DCF) model. It was built as a portfolio project to
@@ -164,7 +164,7 @@ Value side by side, without labelling any scenario as "better".
 ## Architecture
 
 ```
-finscope/
+finzoom/
 ├── app.py                     # Home / Executive Dashboard
 ├── pages/
 │   ├── 1_Financials.py        # Detailed historical statements + KPIs
@@ -198,7 +198,7 @@ layer.
 
 ```bash
 git clone <repository-url>
-cd finscope
+cd finzoom
 pip install -r requirements.txt
 ```
 

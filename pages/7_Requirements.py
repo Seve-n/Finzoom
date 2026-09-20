@@ -3,7 +3,7 @@
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(page_title="FinScope - Requirements", layout="wide")
+st.set_page_config(page_title="FinZoom - Requirements", layout="wide")
 st.title("Requirements")
 
 requirements = pd.DataFrame(

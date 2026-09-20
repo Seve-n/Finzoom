@@ -9,7 +9,7 @@ from src.data_loader import load_financials
 from src.forecast import build_forecast
 from src.valuation import equity_value, run_dcf
 
-st.set_page_config(page_title="FinScope - Valuation", layout="wide")
+st.set_page_config(page_title="FinZoom - Valuation", layout="wide")
 st.title("DCF Valuation")
 
 st.markdown(
@@ -106,6 +106,6 @@ valuation_summary = pd.DataFrame(
 st.download_button(
     "Export Valuation Summary (CSV)",
     data=valuation_summary.to_csv(index=False).encode("utf-8"),
-    file_name="finscope_valuation_summary.csv",
+    file_name="finzoom_valuation_summary.csv",
     mime="text/csv",
 )
