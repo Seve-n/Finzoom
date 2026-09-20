@@ -1,7 +1,7 @@
 # FinZoom — Financial Analysis & Valuation Dashboard
 https://finzoom-bprpyq56errohlwuoq4stb.streamlit.app/
 
-open the URL and navigate through the pages using the sidebar.
+open the URL and navigate through the website.
 ## Disclaimer
 
 This is a **fictional personal portfolio project** using **synthetic financial
