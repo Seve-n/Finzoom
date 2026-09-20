@@ -191,7 +191,7 @@ and returns a new one, without mutating its input. Pages only call these
 functions and render the results — no business logic lives in the UI
 layer.
 
-## Installation
+## WEBSITE
 
 ```bash
 git clone <repository-url>
@@ -201,18 +201,10 @@ pip install -r requirements.txt
 
 ## Usage
 
-```bash
-streamlit run app.py
-```
+(https://finzoom-bprpyq56errohlwuoq4stb.streamlit.app/)
 
-Then open the URL Streamlit prints (typically http://localhost:8501) and
-navigate through the pages using the sidebar.
+ open the URL and navigate through the pages using the sidebar.
 
-Run the test suite:
-
-```bash
-python -m pytest tests/ -v
-```
 
 ## Limitations
 
