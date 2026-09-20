@@ -124,10 +124,3 @@ with st.expander("Data Quality Checks"):
             st.warning(issue)
     else:
         st.success("No data quality anomalies detected.")
-
-st.divider()
-st.caption(
-    "Use the sidebar to go deeper: Financials for the full statements, Forecast to "
-    "set your own assumptions, Valuation for the DCF, Sensitivity and Scenarios to "
-    "stress-test it, and Business Analysis for the BA framing."
-)
